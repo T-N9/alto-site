@@ -1,0 +1,1 @@
+Images and visual elements to use in the project.

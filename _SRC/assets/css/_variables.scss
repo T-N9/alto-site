@@ -1,0 +1,31 @@
+// color variables
+$primary-color: #616161;
+$secondary-color: #f3f3f3;
+$active-color: #c0c0c0;
+
+// fonts
+@font-face {
+    font-family: GillSans;
+    src: url('../fonts/GILSANUB.TTF');
+}
+@font-face {
+    font-family: GillSansMT;
+    src: url('../fonts/GIL_____.TTF');
+}
+
+// ready made classes
+.nav-active{
+    background-color: $primary-color;
+    border-radius: 50px;
+    li{
+        font-weight: 500;
+        color: white;
+    }
+    
+}
+.a-display{
+    display: none;
+}
+.nav-display{
+    display: block;
+}

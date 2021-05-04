@@ -1,0 +1,315 @@
+@font-face {
+  font-family: GillSans;
+  src: url("../fonts/GILSANUB.TTF");
+}
+
+@font-face {
+  font-family: GillSansMT;
+  src: url("../fonts/GIL_____.TTF");
+}
+
+.nav-active {
+  background-color: #616161;
+  border-radius: 50px;
+}
+
+.nav-active li {
+  font-weight: 500;
+  color: white;
+}
+
+.a-display {
+  display: none;
+}
+
+.nav-display {
+  display: block;
+}
+
+@-webkit-keyframes title-alto {
+  0% {
+    text-shadow: 0px 0px 0px #00000040;
+    -webkit-clip-path: circle(0% at 0 50%);
+            clip-path: circle(0% at 0 50%);
+  }
+  50% {
+    text-shadow: 0px 10px 6px #00000040;
+    color: white;
+    -webkit-clip-path: circle(50% at 0 50%);
+            clip-path: circle(50% at 0 50%);
+  }
+  100% {
+    color: #616161;
+    -webkit-clip-path: circle(100% at 0 50%);
+            clip-path: circle(100% at 0 50%);
+  }
+}
+
+@keyframes title-alto {
+  0% {
+    text-shadow: 0px 0px 0px #00000040;
+    -webkit-clip-path: circle(0% at 0 50%);
+            clip-path: circle(0% at 0 50%);
+  }
+  50% {
+    text-shadow: 0px 10px 6px #00000040;
+    color: white;
+    -webkit-clip-path: circle(50% at 0 50%);
+            clip-path: circle(50% at 0 50%);
+  }
+  100% {
+    color: #616161;
+    -webkit-clip-path: circle(100% at 0 50%);
+            clip-path: circle(100% at 0 50%);
+  }
+}
+
+@-webkit-keyframes title-border {
+  0% {
+    border: 4px solid transparent;
+  }
+  100% {
+    border: 4px solid #c0c0c0;
+  }
+}
+
+@keyframes title-border {
+  0% {
+    border: 4px solid transparent;
+  }
+  100% {
+    border: 4px solid #c0c0c0;
+  }
+}
+
+@-webkit-keyframes title-p {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes title-p {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes landing-bg {
+  from {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  to {
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
+}
+
+@keyframes landing-bg {
+  from {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  to {
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #landingPage #title h1 {
+    font-size: 9rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .a-display {
+    display: block;
+  }
+  .nav-display {
+    display: none !important;
+  }
+  #landingPage #title h1 {
+    font-size: 4.5rem !important;
+    text-align: center;
+  }
+  #landingPage #title p {
+    bottom: -29px !important;
+    left: 23% !important;
+    font-size: 16px !important;
+    padding: 0 20px !important;
+  }
+  #navBar {
+    margin-top: -54px !important;
+    padding: 15px 0px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #landingPage #title h1 {
+    font-size: 2.5rem !important;
+    text-align: center;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat;
+  height: 300vh;
+}
+
+body #landingPage {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/landing-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+body #landingPage::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #ffffff), to(#ffffff90));
+  background-image: linear-gradient(to top, #ffffff 60%, #ffffff90 100%);
+  -webkit-animation: landing-bg 1s linear 3s both;
+          animation: landing-bg 1s linear 3s both;
+}
+
+body #landingPage #title {
+  border: 4px solid #c0c0c0;
+  -webkit-animation: title-border 1s ease-out 2.5s both;
+          animation: title-border 1s ease-out 2.5s both;
+  border-radius: 24px;
+  padding: 17px 40px;
+  position: relative;
+}
+
+body #landingPage #title h1 {
+  color: #616161;
+  font-family: GillSans !important;
+  font-size: 10rem;
+  text-shadow: 0px 10px 6px #00000040;
+}
+
+body #landingPage #title h1 #a {
+  -webkit-animation: title-alto 1s linear;
+          animation: title-alto 1s linear;
+}
+
+body #landingPage #title h1 #l {
+  -webkit-animation: title-alto 1s linear 0.5s both;
+          animation: title-alto 1s linear 0.5s both;
+}
+
+body #landingPage #title h1 #t {
+  -webkit-animation: title-alto 1s linear 1.5s both;
+          animation: title-alto 1s linear 1.5s both;
+}
+
+body #landingPage #title h1 #o {
+  -webkit-animation: title-alto 1s linear 2s both;
+          animation: title-alto 1s linear 2s both;
+}
+
+body #landingPage #title h1 #colon {
+  -webkit-animation: title-alto 1s linear 2.5s both;
+          animation: title-alto 1s linear 2.5s both;
+}
+
+body #landingPage #title p {
+  position: absolute;
+  bottom: -50px;
+  left: 38%;
+  font-size: 20px;
+  color: #c0c0c0;
+  font-weight: 500;
+  display: inline;
+  background: white;
+  border-radius: 40px;
+  padding: 20px 30px;
+}
+
+body #landingPage #title p .sub-name {
+  -webkit-animation: title-p 1s ease-out 2.5s both;
+          animation: title-p 1s ease-out 2.5s both;
+}
+
+body #landingPage #job {
+  position: relative;
+  margin-top: 50px;
+}
+
+body #landingPage #job p {
+  font-family: GillSansMT;
+  text-align: center;
+  font-size: 20px;
+  color: #616161;
+}
+
+body #navBar {
+  margin-top: -64px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 5000;
+  top: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 11px 0px;
+}
+
+body #navBar #navDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #navBar #navDiv ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  margin: 0 !important;
+}
+
+body #navBar #navDiv ul a {
+  text-decoration: none !important;
+  color: #616161;
+}
+
+body #navBar #navDiv ul li {
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0px 20px;
+}
+/*# sourceMappingURL=style.css.map */

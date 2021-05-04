@@ -1,0 +1,53 @@
+@media screen and (max-width:1200px){
+    
+}
+@media screen and (max-width:992px){
+    
+}
+@media screen and (max-width:768px){
+    #landingPage{
+        #title{
+            h1{
+                font-size: 9rem !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .a-display{
+        display: block;
+    }
+    .nav-display{
+        display: none !important;
+    }
+    #landingPage{
+        #title{
+            h1{
+                font-size: 4.5rem !important;
+                text-align: center;
+            }
+            p{
+                bottom: -29px !important;
+                left: 23% !important;
+                font-size: 16px !important;
+                padding: 0 20px !important;
+            }
+        }
+    }
+    #navBar{
+        margin-top: -54px !important;
+        padding: 15px 0px !important;
+    }
+}
+@media screen and (max-width:375px){
+}
+@media screen and (max-width:320px){
+    #landingPage{
+        #title{
+            h1{
+                font-size: 2.5rem !important;
+                text-align: center;
+            }
+        }
+    }
+}
