@@ -39,3 +39,11 @@
         backdrop-filter: blur(0);
     }
 }
+@keyframes smNav-ani {
+    from{
+        transform: translateY(225px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

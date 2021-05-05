@@ -15,17 +15,34 @@ $active-color: #c0c0c0;
 
 // ready made classes
 .nav-active{
-    background-color: $primary-color;
+    background-color: $primary-color !important;
     border-radius: 50px;
     li{
+        background-color: $primary-color !important;
+        border-radius: 50px;
         font-weight: 500;
         color: white;
     }
-    
 }
 .a-display{
     display: none;
 }
 .nav-display{
     display: block;
+}
+.smNav-origin{
+    transform: translateY(225px);
+}
+.smNav-active{
+    transform: translateY(0);
+}
+.navBurger-active{
+    background-color: $primary-color;
+    border-radius: 3px;
+    color: white;
+    padding: 0px 3px;
+}
+a{
+    text-decoration: none !important;
+    color: $primary-color;
 }

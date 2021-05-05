@@ -9,11 +9,13 @@
 }
 
 .nav-active {
-  background-color: #616161;
+  background-color: #616161 !important;
   border-radius: 50px;
 }
 
 .nav-active li {
+  background-color: #616161 !important;
+  border-radius: 50px;
   font-weight: 500;
   color: white;
 }
@@ -24,6 +26,28 @@
 
 .nav-display {
   display: block;
+}
+
+.smNav-origin {
+  -webkit-transform: translateY(225px);
+          transform: translateY(225px);
+}
+
+.smNav-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.navBurger-active {
+  background-color: #616161;
+  border-radius: 3px;
+  color: white;
+  padding: 0px 3px;
+}
+
+a {
+  text-decoration: none !important;
+  color: #616161;
 }
 
 @-webkit-keyframes title-alto {
@@ -122,6 +146,28 @@
   }
 }
 
+@-webkit-keyframes smNav-ani {
+  from {
+    -webkit-transform: translateY(225px);
+            transform: translateY(225px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes smNav-ani {
+  from {
+    -webkit-transform: translateY(225px);
+            transform: translateY(225px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 768px) {
   #landingPage #title h1 {
     font-size: 9rem !important;
@@ -189,7 +235,7 @@ body #landingPage::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 102%;
   top: 0;
   left: 0;
   z-index: 0;
@@ -272,10 +318,9 @@ body #landingPage #job p {
 
 body #navBar {
   margin-top: -64px;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   z-index: 5000;
-  top: 0;
+  bottom: 0;
   width: 100%;
   background-color: #f3f3f3;
   padding: 11px 0px;
@@ -302,14 +347,34 @@ body #navBar #navDiv ul {
   margin: 0 !important;
 }
 
-body #navBar #navDiv ul a {
-  text-decoration: none !important;
-  color: #616161;
-}
-
 body #navBar #navDiv ul li {
   padding: 10px 15px;
   cursor: pointer;
   margin: 0px 20px;
+}
+
+body #navBar #navDiv #navBurger {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+body #smNav {
+  background-color: #f3f3f3;
+  position: fixed;
+  width: 100%;
+  bottom: 50px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+body #smNav #navDiv ul {
+  text-align: center;
+  padding: 5px 130px !important;
+  margin: 0 !important;
+  list-style-type: none;
+}
+
+body #smNav #navDiv ul li {
+  padding: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
