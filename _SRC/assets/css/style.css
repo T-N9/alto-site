@@ -183,6 +183,9 @@ a {
   .nav-display {
     display: none !important;
   }
+  #landingPage {
+    height: 95vh !important;
+  }
   #landingPage #title h1 {
     font-size: 4.5rem !important;
     text-align: center;
@@ -357,8 +360,8 @@ body #navBar #navDiv ul li {
 }
 
 body #navBar #navDiv #navBurger {
-  -webkit-transition: background-color 0.5s linear;
-  transition: background-color 0.5s linear;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 body #smNav {
