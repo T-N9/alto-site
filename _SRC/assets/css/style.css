@@ -31,15 +31,17 @@
 .smNav-origin {
   -webkit-transform: translateY(225px);
           transform: translateY(225px);
+  visibility: hidden;
 }
 
 .smNav-active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  visibility: visible;
 }
 
 .navBurger-active {
-  background-color: #616161;
+  background-color: #c0c0c0;
   border-radius: 3px;
   color: white;
   padding: 0px 3px;
@@ -355,8 +357,8 @@ body #navBar #navDiv ul li {
 }
 
 body #navBar #navDiv #navBurger {
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
 }
 
 body #smNav {
@@ -364,6 +366,7 @@ body #smNav {
   position: fixed;
   width: 100%;
   bottom: 50px;
+  z-index: 4005;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }

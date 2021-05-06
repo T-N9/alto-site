@@ -32,12 +32,14 @@ $active-color: #c0c0c0;
 }
 .smNav-origin{
     transform: translateY(225px);
+    visibility: hidden;
 }
 .smNav-active{
     transform: translateY(0);
+    visibility: visible;
 }
 .navBurger-active{
-    background-color: $primary-color;
+    background-color: $active-color;
     border-radius: 3px;
     color: white;
     padding: 0px 3px;

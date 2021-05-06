@@ -112,7 +112,7 @@ body{
                 }
             }
             #navBurger{
-                transition: 0.5s linear;
+                transition:background-color 0.5s linear;
             }
         }
     }
@@ -121,6 +121,7 @@ body{
         position: fixed;
         width: 100%;
         bottom: 50px;
+        z-index: 4005;
         // animation: smNav-ani 0.5s ease-out both;
         transition: 0.5s ease-out;
         #navDiv{
