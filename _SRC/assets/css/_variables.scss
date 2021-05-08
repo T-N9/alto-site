@@ -1,30 +1,8 @@
 // color variables
-
-// $primary-color: #616161;
-// $secondary-color: #f3f3f3;
-// $active-color: #c0c0c0;
-
-// $primary-color: #2E5090;
-// $secondary-color: #E7EFFF;
-// $active-color: #A7AABD;
-
-$primary-color: #616161;
-$secondary-color: #f3f3f3;
-$active-color: #474554;
-
-// $primary-color: #63D4DA;
-// $secondary-color: #f3f3f3;
-// $active-color: #474554;
-// $bg-color:#018695;
-// $shadowB-color:#005961;
-
-// $primary-color: #2997ff;
-// $secondary-color: #f3f3f3;
-// $active-color: #A4ABBD;
-
 $primary-color:#018695;
 $secondary-color:#005961;
 $active-color:#6FE9EC;
+$text-color:#324B4E;
 
 // fonts
 @font-face {
@@ -71,7 +49,7 @@ $active-color:#6FE9EC;
 .navBurger-active{
     background-color: $primary-color;
     border-radius: 3px;
-    color: white;
+    color: white !important;
     padding: 0px 3px;
 }
 a{

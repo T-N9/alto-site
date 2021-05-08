@@ -63,3 +63,12 @@
         clip-path: circle(100% at 0 50%);
     }
 }
+
+@keyframes ls-ani {
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
