@@ -12,6 +12,19 @@
             }
         }
     }
+    #aboutPage{
+        background-size: 170% !important;
+        background-position: -16rem 37rem !important;
+        #skills{
+            width: 61% !important;
+            .progress{
+                width: 100% !important;
+            }
+        }
+        #aboutPage-right{
+            margin-top: 5rem;
+        }
+    }
 }
 @media screen and (max-width:576px){
     .a-display{
@@ -38,6 +51,27 @@
     #navBar{
         margin-top: -54px !important;
         padding: 15px 0px !important;
+    }
+    #aboutPage{
+        background-size: 285% !important;
+        background-position: -21rem 46rem !important;
+        margin-top: 40px !important;
+        #aboutPage-left{
+            h1{
+                font-size: 7rem !important;
+            }
+        }
+        #aboutPage-right{
+            #paraForm{
+                width: 95% !important;
+                #caption{
+                    left: auto !important;
+                }
+            }
+        }
+        #skills{
+            width: 100% !important;
+        }
     }
 }
 @media screen and (max-width:375px){

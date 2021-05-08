@@ -1,7 +1,30 @@
 // color variables
+
+// $primary-color: #616161;
+// $secondary-color: #f3f3f3;
+// $active-color: #c0c0c0;
+
+// $primary-color: #2E5090;
+// $secondary-color: #E7EFFF;
+// $active-color: #A7AABD;
+
 $primary-color: #616161;
 $secondary-color: #f3f3f3;
-$active-color: #c0c0c0;
+$active-color: #474554;
+
+// $primary-color: #63D4DA;
+// $secondary-color: #f3f3f3;
+// $active-color: #474554;
+// $bg-color:#018695;
+// $shadowB-color:#005961;
+
+// $primary-color: #2997ff;
+// $secondary-color: #f3f3f3;
+// $active-color: #A4ABBD;
+
+$primary-color:#018695;
+$secondary-color:#005961;
+$active-color:#6FE9EC;
 
 // fonts
 @font-face {
@@ -11,6 +34,13 @@ $active-color: #c0c0c0;
 @font-face {
     font-family: GillSansMT;
     src: url('../fonts/GIL_____.TTF');
+}
+
+//mixin
+@mixin centering-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // ready made classes
@@ -47,4 +77,8 @@ $active-color: #c0c0c0;
 a{
     text-decoration: none !important;
     color: $primary-color;
+    color: white;
+    &:hover{
+        color: $active-color;
+    }
 }
