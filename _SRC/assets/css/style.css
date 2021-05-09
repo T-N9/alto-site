@@ -238,6 +238,9 @@ a:hover {
   #aboutPage #aboutPage-right {
     margin-top: 5rem;
   }
+  #aboutPage .more-about {
+    margin-top: 25px;
+  }
   #workPage .my-work #bgL {
     left: 175px !important;
   }
@@ -478,6 +481,7 @@ body #navBar #navDiv #navBurger {
   -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
   color: #324B4E;
+  padding: 0px 20px;
 }
 
 body #smNav {
@@ -544,8 +548,9 @@ body #aboutPage #aboutPage-row-1 #aboutPage-right {
 
 body #aboutPage #aboutPage-row-1 #aboutPage-right #paraForm {
   position: relative;
+  z-index: 5;
   width: 75%;
-  border: 0.1px solid #6FE9EC;
+  background-color: #018695;
   -webkit-box-shadow: 3px 4px 2px #00000040;
           box-shadow: 3px 4px 2px #00000040;
   border-radius: 24px;
@@ -559,6 +564,30 @@ body #aboutPage #aboutPage-row-1 #aboutPage-right #paraForm {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body #aboutPage #aboutPage-row-1 #aboutPage-right #paraForm::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(160deg, #6FE9EC, #005961);
+}
+
+body #aboutPage #aboutPage-row-1 #aboutPage-right #paraForm::after {
+  content: "";
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  border-radius: 24px;
+  top: 2px;
+  left: 2px;
+  z-index: -1;
+  background-color: #018695;
 }
 
 body #aboutPage #aboutPage-row-1 #aboutPage-right #paraForm #caption {
@@ -629,7 +658,8 @@ body #aboutPage #aboutPage-row-2 .more-about #skills .progress::before {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #018695;
+  background-image: -webkit-gradient(linear, left top, right top, from(#018695), to(#6FE9EC));
+  background-image: linear-gradient(to right, #018695, #6FE9EC);
   height: 100%;
 }
 
@@ -654,15 +684,16 @@ body #workPage {
   position: absolute;
 }
 
-body #workPage h1 {
-  margin-top: 50px;
+body #workPage #wp-title {
+  margin-top: 100px;
   font-family: GillSansMT;
   text-align: center;
   font-weight: bold;
 }
 
-body #workPage p {
+body #workPage #wp-des {
   text-align: center;
+  margin-bottom: 3rem !important;
 }
 
 body #workPage .warper .my-work {
