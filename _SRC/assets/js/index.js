@@ -1,5 +1,8 @@
 // UI JS
-new WOW().init();
+$(function(){
+    new WOW().init(); 
+  });
+
 
 document.getElementById('navBurger').onclick=function(){
     document.getElementById('smNav').classList.toggle('smNav-origin');

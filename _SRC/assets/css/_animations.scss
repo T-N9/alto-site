@@ -51,18 +51,18 @@
     }
 }
 
-@keyframes about-a {
-    from{
-        transform: scale(1);
-        // text-shadow: 0 0 2px #00000040;
-        clip-path: circle(0% at 0 50%);
-    }
-    to{
-        transform: scale(2);
-        // text-shadow: 0 7px 2px #00000040;
-        clip-path: circle(100% at 0 50%);
-    }
-}
+// @keyframes about-a {
+//     from{
+//         transform: scale(1);
+//         // text-shadow: 0 0 2px #00000040;
+//         clip-path: circle(0% at 0 50%);
+//     }
+//     to{
+//         transform: scale(2);
+//         // text-shadow: 0 7px 2px #00000040;
+//         clip-path: circle(100% at 0 50%);
+//     }
+// }
 
 @keyframes ls-ani {
     from{

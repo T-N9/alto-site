@@ -157,24 +157,33 @@ body{
         #aboutPage-row-1{
             #aboutPage-left{
                 display: flex;
-                align-items: center;
                 justify-content: center;
-                h1{
+                align-items: center;
+                
+                p{
+                    // display:inline;
                     text-align: center;
                     font-size: 10rem;
                     font-family: GillSans;
                     line-height: 0.6;
                     // text-shadow: 0 5px 2px #00000040;
                     filter: drop-shadow(0 5px 2px #00000040);
-                    #a1{
-                        // animation: about-a 2s ease-out 0.5s infinite alternate;
-                    }
-                    #a2{
-                        // animation: about-a 2s ease-out infinite alternate;
-                    }
-                    #a3{
-                        // animation: about-a 2s ease-out 1s infinite alternate;
-                    }
+                }
+                #a1{
+                    animation: about-a 2s ease-out 0.5s both alternate;
+                    margin-right: -3.2rem;
+                    margin-top: 2rem;
+                }
+                #a2{
+                    margin-bottom: 10rem;
+                    
+                    z-index: -1;
+                    animation: about-a 2s ease-out both alternate;
+                }
+                #a3{
+                    margin-left: -3.2rem;
+                    margin-top: 2rem;
+                    animation: about-a 2s ease-out 1s both alternate;
                 }
             }
             #aboutPage-right{
