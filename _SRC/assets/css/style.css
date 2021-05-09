@@ -210,6 +210,60 @@ a:hover {
   }
 }
 
+@-webkit-keyframes progress-ani-1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes progress-ani-1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes progress-ani-2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes progress-ani-2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes progress-ani-3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes progress-ani-3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
 @-webkit-keyframes ls-ani {
   from {
     height: 0%;
@@ -235,6 +289,7 @@ a:hover {
   #aboutPage {
     background-size: 170% !important;
     background-position: -16rem 37rem !important;
+    margin-top: 70px !important;
   }
   #aboutPage #skills {
     width: 61% !important;
@@ -288,7 +343,7 @@ a:hover {
   #aboutPage {
     background-size: 300% !important;
     background-position: -23rem 48rem !important;
-    margin-top: 40px !important;
+    margin-top: 70px !important;
   }
   #aboutPage #aboutPage-left p {
     font-size: 9rem !important;
@@ -678,8 +733,7 @@ body #aboutPage #aboutPage-row-2 .more-about #skills .progress {
   border-radius: 0px !important;
 }
 
-body #aboutPage #aboutPage-row-2 .more-about #skills .progress::before {
-  content: "";
+body #aboutPage #aboutPage-row-2 .more-about #skills .progress .line {
   position: absolute;
   left: 0;
   top: 0;
@@ -692,16 +746,22 @@ body #aboutPage #aboutPage-row-2 .more-about #skills .progress:hover {
   border: 0.5px solid #6FE9EC !important;
 }
 
-body #aboutPage #aboutPage-row-2 .more-about #skills #progress-1::before {
+body #aboutPage #aboutPage-row-2 .more-about #skills #progress-1 .line {
   width: 90%;
+  -webkit-animation: progress-ani-1 0.5s ease-out 0.5s both;
+          animation: progress-ani-1 0.5s ease-out 0.5s both;
 }
 
-body #aboutPage #aboutPage-row-2 .more-about #skills #progress-2::before {
+body #aboutPage #aboutPage-row-2 .more-about #skills #progress-2 .line {
   width: 80%;
+  -webkit-animation: progress-ani-2 1s ease-out 0.5s both;
+          animation: progress-ani-2 1s ease-out 0.5s both;
 }
 
-body #aboutPage #aboutPage-row-2 .more-about #skills #progress-3::before {
+body #aboutPage #aboutPage-row-2 .more-about #skills #progress-3 .line {
   width: 95%;
+  -webkit-animation: progress-ani-3 1.5s ease-out 0.5s both;
+          animation: progress-ani-3 1.5s ease-out 0.5s both;
 }
 
 body #workPage {
@@ -752,18 +812,18 @@ body #workPage .warper .my-work #bgL .ls {
 }
 
 body #workPage .warper .my-work #bgL #l1 {
-  -webkit-animation: ls-ani 0.5s linear both;
-          animation: ls-ani 0.5s linear both;
+  -webkit-animation: ls-ani 0.5s linear 1s both;
+          animation: ls-ani 0.5s linear 1s both;
 }
 
 body #workPage .warper .my-work #bgL #l2 {
-  -webkit-animation: ls-ani 0.5s linear 0.4s both;
-          animation: ls-ani 0.5s linear 0.4s both;
+  -webkit-animation: ls-ani 0.5s linear 1.4s both;
+          animation: ls-ani 0.5s linear 1.4s both;
 }
 
 body #workPage .warper .my-work #bgL #l3 {
-  -webkit-animation: ls-ani 0.5s linear 0.6s both;
-          animation: ls-ani 0.5s linear 0.6s both;
+  -webkit-animation: ls-ani 0.5s linear 1.6s both;
+          animation: ls-ani 0.5s linear 1.6s both;
 }
 
 body #workPage .warper .my-work h3 {

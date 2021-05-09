@@ -51,18 +51,30 @@
     }
 }
 
-// @keyframes about-a {
-//     from{
-//         transform: scale(1);
-//         // text-shadow: 0 0 2px #00000040;
-//         clip-path: circle(0% at 0 50%);
-//     }
-//     to{
-//         transform: scale(2);
-//         // text-shadow: 0 7px 2px #00000040;
-//         clip-path: circle(100% at 0 50%);
-//     }
-// }
+@keyframes progress-ani-1 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes progress-ani-2 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes progress-ani-3 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 95%;
+    }
+}
 
 @keyframes ls-ani {
     from{
