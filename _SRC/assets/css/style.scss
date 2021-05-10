@@ -8,7 +8,7 @@
 
 body{
     font-family: Montserrat;
-    height: 500vh;
+    height: 800vh;
     background-color: $primary-color;
     color: white;
     #landingPage{
@@ -312,10 +312,9 @@ body{
     }
     #workPage{
         background-color: $secondary-color;
-        position: absolute;
-        
+        padding-top: 100px;
+        padding-bottom: 20px;
         #wp-title{
-            margin-top: 100px;
             font-family: GillSansMT;
             text-align: center;
             font-weight: bold;
@@ -389,7 +388,6 @@ body{
         }
         #viewWork{
             text-align: center;
-            margin-bottom: 20px;
             a{
                 display: inline-block;
                 width: 100px;
@@ -399,4 +397,154 @@ body{
             }
         }
     }
+    #blogPage{
+        height: 100vh;
+        background-image: url(../img/blog-bg.png);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        position: relative;
+        #title-txt{
+            position: absolute;
+            left: 33%;
+            bottom: 100px;
+            font-family: GillSans;
+            color: white;
+            font-size: 4rem;
+            text-shadow: -13px 7px 6px #bfc9d2;
+        }
+        .row{
+            height: 100%;
+            #blogPageLeft{
+                #bibleVerse{
+                    text-shadow: -5px 7px 5px #bfc9d2;
+                    margin-top: 100px;
+                    color: $text-color;
+                    p{
+                        font-size: 22px;
+                        text-align: justify;
+                        margin-bottom: 0;
+                    }
+                    h3{
+                        font-family: GillSansMT;
+                        float: right;
+                        font-weight: bold;
+                        font-size: 40px;
+                    }
+                }
+            }
+            #blogPageRight{
+                // @include centering-flex;
+                #visitBlog{
+                    text-align: center;
+                    margin-top: 10px;
+                    p{
+                        
+                        color: $text-color;
+                        text-decoration: underline !important;
+                        font-weight: bold;
+                        
+                        display: inline;
+                    }
+                    
+                }
+                #blogs-wrapper{
+                    background-color: #DCECE750;
+                    margin-top: 20px;
+                    border-radius: 10px;
+                    overflow-y: auto;
+                    box-shadow: 0px -3px 5px #00000040 inset;
+                    
+                    height: 90vh;
+                    h3{
+                        text-align: center;
+                        font-weight: bold;
+                        color: $text-color;
+                        font-family: GillSans;
+                        font-size: 20px;
+                        margin-top: 20px;
+                    }
+                    .blog-post{
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 5px;
+                            top: 0;
+                            left: 0;
+                            z-index: 0;
+                            background-color: #00000040;
+                        }
+                        color: white;
+                        position: relative;
+                        box-shadow: -3px 2px 3px #00000070;
+                        .hanger{
+                            font-family: GillSans;
+                            position: absolute;
+                            top: -20px;
+                            left: 0;
+                            font-weight: bolder;
+                            font-size: 25px;
+                            text-shadow: 1px 2px 5px #bfc9d2;
+                        }
+                        #blog-des{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            z-index: 3;
+                            padding: 20px;
+                            padding-top: 50px;
+                            title{
+                                font-weight: bold;
+                            }
+                            p{
+                                font-size: 12px;
+                                a{
+                                    text-decoration: underline !important;
+                                }
+                            }
+                        }
+                        
+                        background-image: url(../img/blog.jpeg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        width: 50%;
+                        height: 180px;
+                        
+                        cursor: pointer;
+                        margin: 30px auto;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+    }
 }
+// Scroll Bar
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $light-color;
+    padding: 5px; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:$secondary-color;
+    border-radius: 2px; 
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:$active-color; 
+  }
