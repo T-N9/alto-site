@@ -423,9 +423,11 @@ a:hover {
     height: 110vh !important;
   }
   #blogPage #blogPageLeft #bibleVerse {
-    width: 88%;
+    width: 72% !important;
+    margin-top: 75px !important;
   }
   #blogPage #blogPageLeft #bibleVerse p {
+    font-weight: bold;
     font-size: 20px !important;
   }
   #blogPage #blogPageLeft #bibleVerse h3 {
@@ -434,10 +436,14 @@ a:hover {
     text-align: center;
   }
   #blogPage #blogPageRight #blogs-wrapper {
+    margin-top: 0 !important;
     height: 60vh !important;
   }
   #blogPage #blogPageRight #blogs-wrapper .blog-post {
     width: 80% !important;
+  }
+  #blogPage #blogPageRight #visitBlog {
+    margin-bottom: 10px;
   }
 }
 
@@ -982,6 +988,7 @@ body #blogPage .row #blogPageLeft #bibleVerse {
 }
 
 body #blogPage .row #blogPageLeft #bibleVerse p {
+  font-weight: bold;
   font-size: 22px;
   text-align: justify;
   margin-bottom: 0;

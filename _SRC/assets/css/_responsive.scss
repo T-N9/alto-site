@@ -124,8 +124,10 @@
         height: 110vh !important;
         #blogPageLeft{
             #bibleVerse{
-                width: 88%;
+                width: 72% !important;
+                margin-top: 75px !important;
                 p{
+                    font-weight: bold;
                     font-size: 20px !important;
                 }
                 h3{
@@ -137,10 +139,14 @@
         }
         #blogPageRight{
             #blogs-wrapper{
+                margin-top: 0 !important;
                 height: 60vh !important;
                 .blog-post{
                     width: 80% !important;
                 }
+            }
+            #visitBlog{
+                margin-bottom: 10px;
             }
         }
     }
