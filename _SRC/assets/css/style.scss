@@ -8,7 +8,6 @@
 
 body{
     font-family: Montserrat;
-    height: 800vh;
     background-color: $primary-color;
     color: white;
     #landingPage{
@@ -416,7 +415,10 @@ body{
         .row{
             height: 100%;
             #blogPageLeft{
+                display: flex;
+                justify-content: center;
                 #bibleVerse{
+                    width: 70%;
                     text-shadow: -5px 7px 5px #bfc9d2;
                     margin-top: 100px;
                     color: $text-color;
@@ -523,6 +525,87 @@ body{
             }
         }
 
+    }
+    #contactPage{
+        height: 100vh;
+        h1{
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 50px;
+            
+        }
+        #socialBar{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            #fb{
+                animation: links-ani 1s ease-out 0.5s both;
+            }
+            #github{
+                animation: links-ani 1s ease-out 1s both;
+            }
+            #linkedin{
+                animation: links-ani 1s ease-out 1.5s both;
+            }
+            #twitter{
+                animation: links-ani 1s ease-out 2s both;
+            }
+            .links{
+                
+                text-align: center;
+                width: 100px;
+                text-shadow: 0px 10px 3px #00000040;
+                display: inline-block;
+                transition: 0.5s;
+                
+                &:hover{
+                    color: $text-color;
+                }
+                svg{
+                    
+                    font-size: 4rem;
+                    filter: drop-shadow(0px 10px 1px #00000040);
+                }
+                h1{
+                    
+                    font-size: 7rem;
+                    font-family: GillSans;
+                    margin: 0;
+                    margin-top: -50px;
+                }
+            }
+        }
+        #details{
+            display: table;
+            margin: auto;
+            margin-top: 50px;
+            h3{
+                font-size: 25px;
+                font-weight: bold;
+            }
+            
+        }
+        #dev{
+            display: table;
+            margin: auto;
+            color: $text-color;
+            background-color: white;
+            padding: 20px;
+            transition: 0.5s;
+            svg{
+                font-size: 50px;
+            }
+            p{
+                display: inline;
+                margin: 0;
+            }
+            &:hover{
+                background-color: $text-color;
+                color: white;
+            }
+        }
     }
 }
 // Scroll Bar

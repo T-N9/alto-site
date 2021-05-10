@@ -282,6 +282,42 @@ a:hover {
   }
 }
 
+@-webkit-keyframes links-ani {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes links-ani {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #landingPage #title h1 {
     font-size: 9rem !important;
@@ -392,6 +428,11 @@ a:hover {
   #blogPage #blogPageLeft #bibleVerse p {
     font-size: 20px !important;
   }
+  #blogPage #blogPageLeft #bibleVerse h3 {
+    float: none !important;
+    font-size: 35px;
+    text-align: center;
+  }
   #blogPage #blogPageRight #blogs-wrapper {
     height: 60vh !important;
   }
@@ -413,7 +454,6 @@ a:hover {
 
 body {
   font-family: Montserrat;
-  height: 800vh;
   background-color: #018695;
   color: white;
 }
@@ -925,7 +965,17 @@ body #blogPage .row {
   height: 100%;
 }
 
+body #blogPage .row #blogPageLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body #blogPage .row #blogPageLeft #bibleVerse {
+  width: 70%;
   text-shadow: -5px 7px 5px #bfc9d2;
   margin-top: 100px;
   color: #324B4E;
@@ -1034,6 +1084,110 @@ body #blogPage .row #blogPageRight #blogs-wrapper .blog-post #blog-des p {
 
 body #blogPage .row #blogPageRight #blogs-wrapper .blog-post #blog-des p a {
   text-decoration: underline !important;
+}
+
+body #contactPage {
+  height: 100vh;
+}
+
+body #contactPage h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+body #contactPage #socialBar {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #contactPage #socialBar #fb {
+  -webkit-animation: links-ani 1s ease-out 0.5s both;
+          animation: links-ani 1s ease-out 0.5s both;
+}
+
+body #contactPage #socialBar #github {
+  -webkit-animation: links-ani 1s ease-out 1s both;
+          animation: links-ani 1s ease-out 1s both;
+}
+
+body #contactPage #socialBar #linkedin {
+  -webkit-animation: links-ani 1s ease-out 1.5s both;
+          animation: links-ani 1s ease-out 1.5s both;
+}
+
+body #contactPage #socialBar #twitter {
+  -webkit-animation: links-ani 1s ease-out 2s both;
+          animation: links-ani 1s ease-out 2s both;
+}
+
+body #contactPage #socialBar .links {
+  text-align: center;
+  width: 100px;
+  text-shadow: 0px 10px 3px #00000040;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #contactPage #socialBar .links:hover {
+  color: #324B4E;
+}
+
+body #contactPage #socialBar .links svg {
+  font-size: 4rem;
+  -webkit-filter: drop-shadow(0px 10px 1px #00000040);
+          filter: drop-shadow(0px 10px 1px #00000040);
+}
+
+body #contactPage #socialBar .links h1 {
+  font-size: 7rem;
+  font-family: GillSans;
+  margin: 0;
+  margin-top: -50px;
+}
+
+body #contactPage #details {
+  display: table;
+  margin: auto;
+  margin-top: 50px;
+}
+
+body #contactPage #details h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+body #contactPage #dev {
+  display: table;
+  margin: auto;
+  color: #324B4E;
+  background-color: white;
+  padding: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #contactPage #dev svg {
+  font-size: 50px;
+}
+
+body #contactPage #dev p {
+  display: inline;
+  margin: 0;
+}
+
+body #contactPage #dev:hover {
+  background-color: #324B4E;
+  color: white;
 }
 
 ::-webkit-scrollbar {
