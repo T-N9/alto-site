@@ -64,30 +64,5 @@ a{
         color: $active-color;
     }
 }
-@-webkit-keyframes about-a {
-    from{
-        clip-path: circle(0% at 0 50%);
-    }
-    to{
-        clip-path: circle(135% at 0 50%);
-    }
-}
-@keyframes about-a {
-    from{
-        clip-path: circle(0% at 0 50%);
-    }
-    to{
-        clip-path: circle(135% at 0 50%);
-    }
-}
-.animate__about-a{
-    #a1{
-        animation: about-a 2s ease-out 0.5s both alternate;
-    }
-    #a2{
-        animation: about-a 2s ease-out both alternate;
-    }
-    #a3{
-        animation: about-a 2s ease-out 1s both alternate;
-    }
-}
+
+// some variables used in animations are declared in _animation.css

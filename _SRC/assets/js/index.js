@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#loaderPage").fadeOut(500, function () {
       this.remove();
     });
+    $('#title').addClass('title-animate');
   });
 
   new WOW().init();

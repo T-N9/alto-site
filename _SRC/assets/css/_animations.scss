@@ -16,7 +16,51 @@
         // clip-path: circle(100.0% at 0 50%);
     }
 }
-
+.title-animate{
+    animation: title-border 1s ease-out 2.5s both;
+    #a{
+        animation: title-alto 1s linear both;
+    }
+    #l{
+        animation: title-alto 1s linear 0.5s both;
+    }
+    #t{
+        animation: title-alto 1s linear 1s both;
+    }
+    #o{
+        animation: title-alto 1s linear 1.5s both;
+    }
+    #colon{
+        animation: title-alto 1s linear 2s both;
+    }
+}
+@-webkit-keyframes about-a {
+    from{
+        clip-path: circle(0% at 0 50%);
+    }
+    to{
+        clip-path: circle(135% at 0 50%);
+    }
+}
+@keyframes about-a {
+    from{
+        clip-path: circle(0% at 0 50%);
+    }
+    to{
+        clip-path: circle(135% at 0 50%);
+    }
+}
+.animate__about-a{
+    #a1{
+        animation: about-a 2s ease-out 0.5s both alternate;
+    }
+    #a2{
+        animation: about-a 2s ease-out both alternate;
+    }
+    #a3{
+        animation: about-a 2s ease-out 1s both alternate;
+    }
+}
 @keyframes title-border {
     0%{
         border: 4px solid transparent;

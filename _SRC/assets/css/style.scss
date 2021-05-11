@@ -30,12 +30,12 @@ body{
         justify-content: center;
         align-items: center;
         background-image: url(../img/landing-bg-1.png);
+
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
         #title{
-            animation: title-border 1s ease-out 2.5s both;
             border-radius: 24px;
             padding: 17px 40px;
             position: relative;
@@ -45,22 +45,6 @@ body{
                 font-family: GillSans !important;
                 font-size: 10rem;
                 text-shadow: 0px 10px 3px #00000040;
-
-                #a{
-                    animation: title-alto 1s linear both;
-                }
-                #l{
-                    animation: title-alto 1s linear 0.5s both;
-                }
-                #t{
-                    animation: title-alto 1s linear 1s both;
-                }
-                #o{
-                    animation: title-alto 1s linear 1.5s both;
-                }
-                #colon{
-                    animation: title-alto 1s linear 2s both;
-                }
             }
             p{
                 
@@ -532,7 +516,7 @@ body{
 
     }
     #contactPage{
-        height: 100vh;
+        height: 115vh;
         position: relative;
         h1{
             font-size: 30px;
@@ -613,10 +597,8 @@ body{
             }
         }
         #credit{
-            position: absolute;
-            bottom: 70px;
-            left: 43.5%;
-            text-align: right;
+            margin-top: 50px;
+            text-align: center;
             font-weight: bold;
             a{
                 font-family: GillSans;
