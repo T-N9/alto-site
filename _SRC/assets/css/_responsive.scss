@@ -121,7 +121,7 @@
         }
     }
     #blogPage{
-        height: 110vh !important;
+        height: 115vh !important;
         #blogPageLeft{
             #bibleVerse{
                 width: 72% !important;
@@ -149,6 +149,9 @@
                 margin-bottom: 10px;
             }
         }
+    }
+    #credit{
+        left: 25.5% !important;
     }
 }
 @media screen and (max-width:375px){

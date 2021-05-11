@@ -39,6 +39,9 @@ $light-color:#DCECE7;
 .nav-display{
     display: block;
 }
+.nav-link{
+    padding: 0 !important;
+}
 .smNav-origin{
     transform: translateY(225px);
     visibility: hidden;
