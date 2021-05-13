@@ -33,15 +33,23 @@
 }
 
 .smNav-origin {
-  -webkit-transform: translateY(225px);
-          transform: translateY(225px);
-  visibility: hidden;
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
+  height: 0;
+}
+
+.smNav-origin li {
+  height: 0;
 }
 
 .smNav-active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  visibility: visible;
+  height: 230px;
+}
+
+.smNav-active li {
+  height: 44px;
 }
 
 .navBurger-active {
@@ -59,6 +67,16 @@ a {
 
 a:hover {
   color: #6FE9EC;
+}
+
+.nav-none {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-income {
+  opacity: 1;
+  visibility: visible;
 }
 
 @-webkit-keyframes title-alto {
@@ -421,7 +439,6 @@ a:hover {
     padding: 0 20px !important;
   }
   #navBar {
-    margin-top: -54px !important;
     padding: 15px 0px !important;
   }
   #aboutPage {
@@ -579,15 +596,17 @@ body #landingPage #job p {
 }
 
 body #navBar {
-  margin-top: -64px;
   position: fixed;
   z-index: 5000;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #DCECE7;
-  padding: 11px 0px;
+  padding: 5px 0px;
   -webkit-box-shadow: 0px -3px 3px #00000040;
           box-shadow: 0px -3px 3px #00000040;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body #navBar #navDiv {
@@ -619,6 +638,8 @@ body #navBar #navDiv ul li {
   padding: 10px 15px;
   cursor: pointer;
   margin: 0px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body #navBar #navDiv #navBurger {
@@ -632,7 +653,7 @@ body #smNav {
   background-color: #DCECE7;
   position: fixed;
   width: 100%;
-  bottom: 50px;
+  top: 50px;
   z-index: 4005;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
@@ -650,6 +671,8 @@ body #smNav #navDiv ul a {
 }
 
 body #smNav #navDiv ul li {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
   padding: 10px 0;
 }
 
@@ -658,7 +681,7 @@ body #aboutPage {
   background-repeat: no-repeat;
   background-size: 125%;
   background-position: -9rem 21rem;
-  margin-top: 1rem;
+  padding-top: 100px;
 }
 
 body #aboutPage #aboutPage-row-1 #aboutPage-left {
@@ -880,6 +903,18 @@ body #workPage .warper .my-work {
   margin-bottom: 30px;
 }
 
+body #workPage .warper .my-work .work-des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 body #workPage .warper .my-work #bgL {
   position: absolute;
   z-index: 0;
@@ -960,7 +995,8 @@ body #workPage #viewWork a h6 {
 }
 
 body #blogPage {
-  height: 100vh;
+  height: 105vh;
+  padding-top: 50px;
   background-image: url(../img/blog-bg.png);
   background-size: cover;
   background-position: bottom;
@@ -1026,7 +1062,6 @@ body #blogPage .row #blogPageRight #visitBlog p {
 
 body #blogPage .row #blogPageRight #blogs-wrapper {
   background-color: #DCECE750;
-  margin-top: 20px;
   border-radius: 10px;
   overflow-y: auto;
   -webkit-box-shadow: 0px -3px 5px #00000040 inset;
@@ -1111,7 +1146,8 @@ body #blogPage .row #blogPageRight #blogs-wrapper .blog-post #blog-des p a {
 }
 
 body #contactPage {
-  height: 115vh;
+  height: 100vh;
+  padding: 50px 0;
   position: relative;
 }
 

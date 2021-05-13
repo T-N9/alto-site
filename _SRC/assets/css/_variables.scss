@@ -23,6 +23,7 @@ $light-color:#DCECE7;
 }
 
 // ready made classes
+
 .nav-active{
     background-color: $primary-color !important;
     border-radius: 50px;
@@ -43,12 +44,20 @@ $light-color:#DCECE7;
     padding: 0 !important;
 }
 .smNav-origin{
-    transform: translateY(225px);
-    visibility: hidden;
+    transform: translateY(-300px);
+    // visibility: hidden;
+    height: 0;
+    li{
+        height: 0;
+    }
 }
 .smNav-active{
     transform: translateY(0);
-    visibility: visible;
+    // visibility: visible;
+    height: 230px;
+    li{
+        height: 44px;
+    }
 }
 .navBurger-active{
     background-color: $primary-color;
