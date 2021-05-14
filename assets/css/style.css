@@ -1228,13 +1228,17 @@ body #contactPage #details h3 {
 }
 
 body #contactPage #dev {
-    display: table;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin: auto;
     color: #324B4E;
     background-color: white;
     padding: 20px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    width: 240px;
+    cursor: pointer;
 }
 
 body #contactPage #dev svg {
